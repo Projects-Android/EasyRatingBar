@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step: 0.01"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="current rate: 1"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <com.ev.easyratingbar.EasyRatingBar
+        android:id="@+id/erb_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:drawableMargin="4dp"
+        app:drawableWidth="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxCount="5"
+        app:progressColor="@color/purple_700"
+        app:rate="1"
+        app:ratingDrawable="@mipmap/ic_star"
+        app:step="0.01"
+        app:tintColor="@color/purple_200" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step: 0.5"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="current rate: 4.5"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.ev.easyratingbar.EasyRatingBar
+        android:id="@+id/erb_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:drawableMargin="4dp"
+        app:drawableWidth="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxCount="5"
+        app:progressColor="@color/red_700"
+        app:rate="4.5"
+        app:ratingDrawable="@mipmap/ic_heart"
+        app:step="0.5"
+        app:tintColor="@color/red_200" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step: 0.1"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_airplane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="current rate: 2.8"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.ev.easyratingbar.EasyRatingBar
+        android:id="@+id/erb_airplane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:drawableMargin="4dp"
+        app:drawableWidth="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxCount="5"
+        app:progressColor="@color/teal_700"
+        app:rate="2.8"
+        app:ratingDrawable="@mipmap/ic_airplane"
+        app:step="0.1"
+        app:tintColor="@color/teal_200" />
+</LinearLayout>

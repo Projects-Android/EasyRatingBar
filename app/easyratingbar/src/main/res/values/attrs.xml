@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EasyRatingBar">
+        <attr name="ratingDrawable" format="reference"/>
+        <attr name="drawableWidth" format="dimension"/>
+        <attr name="drawableMargin" format="dimension"/>
+        <attr name="progressColor" format="color" />
+        <attr name="tintColor" format="color" />
+        <attr name="maxCount" format="integer" />
+        <attr name="rate" format="float" />
+        <attr name="step" format="float" />
+        <attr name="slidable" format="boolean" />
+    </declare-styleable>
+</resources>
