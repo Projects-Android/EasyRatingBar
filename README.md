@@ -1,5 +1,5 @@
 # EasyRatingBar
-仿系统RatingBar，更易用，更简洁。
+仿系统RatingBar，更易用，更简洁。自定义形状、大小、间距...
 
 ![image](/screenshot/demo.gif)
 
