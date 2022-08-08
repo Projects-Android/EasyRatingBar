@@ -15,6 +15,11 @@ allprojects {
 ```
 
 **2、Add the dependency**
+```groovy
+dependencies {
+    implementation 'com.github.Projects-Android:EasyRatingBar:0.2'
+	}
+```
 
 **3、use in xml**
 ```xml
@@ -34,4 +39,12 @@ allprojects {
     app:step="0.1"
     app:tintColor="@color/purple_200"
     app:slidable="true"/>
+```
+
+**4、observe in java**
+```java
+EasyRatingBar starRating = findViewById(R.id.erb_star);
+starRating.setOnRatingSeekListener(newRate -> {
+    Log.d("", newRate + "");
+});
 ```
