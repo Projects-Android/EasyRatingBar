@@ -47,7 +47,8 @@
         app:rate="1"
         app:ratingDrawable="@mipmap/ic_star"
         app:step="0.01"
-        app:tintColor="@color/purple_200" />
+        app:tintColor="@color/purple_200"
+        app:slidable="true"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

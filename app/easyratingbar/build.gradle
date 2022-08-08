@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-    id 'com.github.dcendents.android-maven'
+    id 'maven-publish'
 }
 
 android {
@@ -36,4 +36,15 @@ dependencies {
 }
 
 // publish
-group='com.ev.android'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId 'com.ev'
+                artifactId 'easyratingbar'
+                version '0.1'
+            }
+        }
+    }
+}
